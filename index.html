@@ -37,17 +37,6 @@
 
   const btnScrambleSite = document.querySelector("#btnScrambleSite");
   btnScrambleSite.addEventListener("click", function () {
-  /*const movable = document.querySelectorAll(".movable");
-	for (var i = 0; i < movable.length; i++) {
-	  console.log('movable: ', movable[i]);
-    try{
-      movable.parent.css({position: 'relative'});
-    }catch(err) {
-      console.log("here");
-    };
-    movable.css({top: 200, left: 200, position:'absolute'});
-	}
-  */
   try{
     $('.movable').parent.css({position: 'relative'});
   }catch(err) {
@@ -55,7 +44,7 @@
   };
     var x = Math.floor((Math.random() * 500) + 1);;
     var y = Math.floor((Math.random() * 500) + 1);;
-    $('.movable').css({left: x, top: y, position:'absolute'});
+    $('.movable').css({right: x, top: y, position:'absolute'});
     //console.log(one);
 });
 
